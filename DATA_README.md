@@ -6,3 +6,5 @@ Example entry format:
 - {"timestamp_utc": "<time>", "endpoint": "nflfastR API", "params": {"season": year, "type": "regular"}, "output": "data/nfl_year_regular.csv", "sha256": "sha256",  "notes": "Initial dataset collection for player performance"}
 - {"timestamp_utc": "<time>", "endpoint": "https://api.open-meteo.com/v1/forecast", "params": {"latitude": lat, longitude": long, "hourly": ["temperature_2m", "precipitation", "relative_humidity_2m", "wind_speed_10m"], "wind_speed_unit": "mph", "temperature_unit": "fahrenheit", "precipitation_unit": "inch",}, "output": "data/weather.csv", "sha256": "sha256",  "notes": "Get the weather for each game"}
 ---
+
+- {"timestamp_utc": "2025-10-24T210700Z", "endpoint": "https://api.open-meteo.com/v1/forecast", "params": {"latitude": 32.7473, "longitude": -97.0945, "hourly": ["temperature_2m", "precipitation", "relative_humidity_2m", "wind_speed_10m"], "wind_speed_unit": "mph", "temperature_unit": "fahrenheit", "precipitation_unit": "inch"}, "output": "hourly_temps_2025-10-24T210700Z.csv", "sha256": "736b94bb13f7c87a4beb4b52002b927a4b8a3e7a75b2645a7cae0494bc01f487", "python": "3.12.12", "pandas": "2.2.2", "requests": "2.32.4"}
